@@ -1,22 +1,22 @@
-# 为什么选择 Move？从编程语言生态系统建设的角度谈起
+# Why Move? From the Perspective of Programming Language Ecosystem Building
 
-作为一名 Move 编程语言的支持者，每次向开发者推广 Move 时，我总是会遇到同样的问题： **Move 有什么优势？为什么选择 Move？**
+As a proponent of the Move programming language, every time I promote Move to developers, I always encounter the same question: **What are the advantages of Move? Why Move?**
 
-在向外行介绍你喜欢的主题，总是会面临同样的问题。然而，这个问题并不容易回答。如果我们一一列出优缺点，总会有人质疑。毕竟，新语言的生态系统还不成熟，选择只能基于其潜力。如果让我来说： Move 拥有任何一种编程语言构建生态系统的最大潜力，就比如 Solidity，甚至能够超越 Solidity。
+Introducing your favorite topic to an outsider, you always face the same kind of questions. However, this question is not easy to answer. If we list the pros and cons one by one, there will always be people who question them. After all, the ecosystem of a new language is not yet mature, and the choice can only be based on its potential. Let me make a statement: **Move has the most potential of any programming language to build an ecosystem like Solidity, and even to surpass Solidity**.
 
-> 本文目标受众： 对区块链技术感兴趣的开发者。本文希望以简单的方式，尽量少用代码，来解释智能合约当前面临的挑战，并提供 Move 的一些解决方案，使不了解编程语言的读者也能大致了解。欢迎读者提供反馈意见。
+> Target audience: Developers who are interested in the technology of the blockchain field. This article hopes to explain the current challenges faced by smart contracts and provide some solutions of Move in a simple way, with minimal use of code, so that readers who do not understand programming languages can also roughly understand it. Feedback from readers is appreciated.
 
-> 此文档是在 2022 年 5 月撰写的，当时 Move 刚刚出现，没有现在的规模。我翻译并转发到这里，[原文链接](https://jolestar.com/why-move-1/)。
+> This article was written in May 2022, when Move was just emerging and there was no current scale. I translated and reposted it here,[original link(opens in a new tab)](https://jolestar.com/why-move-1).
 
-## 智能合约的两条路
+## Two Paths of Smart Contracts
 
-如果把时间拖回到几年前，新公链上支持图灵完备智能合约的编程语言主要有两种方式：
+If we go back a few years, there were mainly two ways to support Turing-complete smart contracts on new public chains.
 
-一种是基于现有的编程语言进行裁剪，然后运行在 WASM 等通用的虚拟机里。这种方案的优势是可以沿用当前编程语言以及 WASM 虚拟机的生态。
+One is to tailor existing programming languages and run them on universal virtual machines such as WASM. The advantage of this approach is that the current programming languages and WASM virtual machine ecosystem can be reused.
 
-一种是新造一个专门的智能合约编程语言，以及虚拟机，从头构造语言以及虚拟机生态。Solidity 就是这条路线，Move 也是这条路线。
+The other is to create a new smart contract programming language and virtual machine from scratch, like Solidity and Move.
 
-那时候大家普遍其实不太看好 Solidity&Evm 生态，觉得 Solidity 除了用来发 Token，貌似也没有什么用，性能也不好，工具也孱弱，像是个玩具。很多链的目标是让开发者用已有的语言来进行智能合约编程，觉得前一条路更被看好，很少有新公链直接复制 Solidity&Evm。
+At that time, many people were actually not optimistic about the Solidity&EVM ecosystem. They thought that Solidity was only useful for token issuance, had poor performance, weak tools, and was like a toy. The goal of many chains was to enable developers to use existing languages for smart contract programming, and the first path was more favored. There were few new public chains that directly copied Solidity&EVM.
 
 However, after several years of development, especially with the rise of DeFi, people suddenly found that the Solidity ecosystem was different. The smart contract ecosystem that took the first path did not grow up. Why? I will summarize a few reasons.
 
@@ -299,4 +299,6 @@ This article explains Move's attempts to implement on-chain smart contracts and 
 4. [SIP22 NFT(opens in a new tab)](https://github.com/starcoinorg/sips/blob/master/sip-22/index.md) Starcoin's NFT standard, including the explanation of IdentifierNFT
 5. [Unlocking the "Three Locks" of Bitcoin Smart Contracts (jolestar.com)](https://jolestar.com/bitcoin-smart-contract/)
 
-原文链接：<https://rooch.network/blog/why-move-ecosystem>
+
+
+原文链接：https://rooch.network/blog/why-move-ecosystem
